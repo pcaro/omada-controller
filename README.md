@@ -33,7 +33,7 @@ It is based on:
     -v $(pwd)/volumenes/logs:/omada/logs \
     -v $(pwd)/volumenes/data:/omada/data \
     -v $(pwd)/volumenes/data:/omada/work \
-    pcaro/omada-controller
+    pcarorevuelta/omada-controller
     ```
 
     or use [docker-compose.yml](https://github.com/pcaro/omada-controller/blob/master/docker-compose.yml) with:

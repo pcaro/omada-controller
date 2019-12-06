@@ -2,7 +2,7 @@ version: "3.7"
 services:
   omada:
     build: .
-    image: pcaro/omada-controller
+    image: pcarorevuelta/omada-controller
     container_name: omada-controller
     network_mode: host
     init: true

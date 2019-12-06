@@ -15,7 +15,7 @@ LABEL \
     org.opencontainers.image.url="https://github.com/pcaro/omada-controller" \
     org.opencontainers.image.documentation="https://github.com/pcaro/omada-controller/blob/master/README.md" \
     org.opencontainers.image.source="https://github.com/pcaro/omada-controller" \
-    org.opencontainers.image.title="omada-controller" \
+    org.opencontainers.image.title="Omada Controller" \
     org.opencontainers.image.description="TP-Link's Omada controller on a Debian Slim container" \
     image-size="350MB" \
     ram-usage="350MB" \
