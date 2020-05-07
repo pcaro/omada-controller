@@ -5,8 +5,8 @@ FROM ${BASE_IMAGE}:${DEBIAN_VERSION}
 ARG BUILD_DATE
 ARG VCS_REF
 ARG INSTALL_DIR=/opt/tplink/EAPController
-ARG OMADA_VERSION=3.2.4
-ARG RELEASE_DATE=20191108
+ARG OMADA_VERSION=3.2.10
+ARG RELEASE_DATE=20200420
 LABEL \
     org.opencontainers.image.authors="correo@pablocaro.es" \
     org.opencontainers.image.created=$BUILD_DATE \
@@ -53,6 +53,7 @@ RUN RELEASE_YEAR=`echo "${RELEASE_DATE}" | cut -c1-4` && \
        work \
        data && \
     chown -R omada:omada . && \
+    chown -R omada:omada ${INSTALL_DIR} && \
     chmod 500 entrypoint.sh bin/* jre/bin/* && \
     chmod 700 logs work
 USER omada
